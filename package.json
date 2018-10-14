@@ -1,0 +1,35 @@
+{
+  "name": "autumn-cosite-v1",
+  "version": "1.0.0",
+  "description": "autumn corporate site",
+  "author": "kikimetal <reezafratzitz2@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "HOST=0.0.0.0 PORT=80 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "firebase-deploy": "firebase deploy",
+    "deploy": "run-s generate firebase-deploy"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "nuxt": "^2.0.0",
+    "scroll-out": "^2.2.3",
+    "vee-validate": "^2.1.0-beta.9",
+    "vue-parallax-js": "^0.1.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.9.3",
+    "npm-run-all": "^4.1.3",
+    "sass-loader": "^7.1.0"
+  }
+}

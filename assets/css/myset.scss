@@ -1,0 +1,68 @@
+// breakpoint
+@mixin md {
+  @media (min-width: (768px)) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: (1240px)) {
+    @content;
+  }
+}
+
+// font
+@mixin futura {
+  font-family: "futura-pt-bold", sans-serif;
+}
+
+// color
+$skyblue: #00C5FF;
+$lightblue: #BCF0FF;
+$blue: #2294E3;
+$violet: #3D28D6;
+$violet-dark: #2E3192;
+$lavender: #9DB7FE;
+$pink: #FE9DA0;
+$red: #E45B5B;
+$white: #fafafa;
+$grey-1: #E9E8EB;
+$grey-3: #C1C1C1;
+$grey-5: #757575;
+$black: #3E3E3E;
+
+@function pale($color) {
+  @return lighten(desaturate($color, 9%), 6%);
+}
+@function dark($color) {
+  @return darken(desaturate($color, 20%), 15%);
+}
+
+// easing
+$ease-out: cubic-bezier(0.165, 0.84, 0.44, 1);
+$ease-out-back: cubic-bezier(0,1.49,.55,1.3);
+$ease-out-back-fast: cubic-bezier(.08,1,.91,1.15);
+
+// flex center
+@mixin flex-center {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin section-simple {
+  position: relative;
+  width: 100%;
+  height: 190vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  @include md {
+    height: 58vw;
+  }
+  @include lg {
+    height: 55vw;
+  }
+}
