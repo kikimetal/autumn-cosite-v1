@@ -8,7 +8,7 @@ const store = () => new Vuex.Store({
   state: {
     isScrollTop: true,
     isShowNav: false,
-    getHead: () => heads[$nuxt.$route.path],
+    getHead: path => path ? heads[path] : heads[$nuxt.$route.path],
     so: () => ScrollOut({
       cssProps: {
         // viewportY: true,

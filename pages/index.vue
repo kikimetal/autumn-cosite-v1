@@ -1,64 +1,73 @@
-<template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        autumn-cosite-v1
-      </h1>
-      <h2 class="subtitle">
-        Autumn corporate site
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
+<template lang="html">
+  <div class="page">
+    <div id="home">
+
+      <section>
+        <video class="movie" src="/movie/test-03.mp4" playsinline muted autoplay loop></video>
+        <h1>Autumn Inc.</h1>
+        <p>より良いクリエイティブワークを<br/>世に広げる映像製作チーム</p>
+      </section>
+
+      <section>
+        <video class="movie" src="/movie/test-03.mp4" playsinline muted autoplay loop></video>
+        <h1>Autumn Inc.</h1>
+        <p>より良いクリエイティブワークを<br/>世に広げる映像製作チーム</p>
+      </section>
+
+      <section>
+        <video class="movie" src="/movie/test-03.mp4" playsinline muted autoplay loop></video>
+        <h1>Autumn Inc.</h1>
+        <p>より良いクリエイティブワークを<br/>世に広げる映像製作チーム</p>
+      </section>
+
+      <section>
+        <video class="movie" src="/movie/test-03.mp4" playsinline muted autoplay loop></video>
+        <h1>Autumn Inc.</h1>
+        <p>より良いクリエイティブワークを<br/>世に広げる映像製作チーム</p>
+      </section>
+
     </div>
-  </section>
+    <Footer />
+
+  </div>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+import ComingSoon from '~/components/ComingSoon.vue'
+import Movie from '~/components/Movie.vue'
+import Footer from '~/components/Footer.vue'
 
 export default {
   components: {
-    AppLogo
-  }
+    ComingSoon,
+    Movie,
+    Footer,
+  },
+  mounted () { this.$store.state.so() },
+  head () { return this.$store.state.getHead() },
 }
 </script>
 
-<style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+<style lang="scss" scoped>
+@import '~/assets/css/myset.scss';
+#home{
+  .movie{
+    width: 100%;
+  }
+  section{
+    padding: 150px 0;
+    text-align: center;
+    h1{
+      padding: 1em 0 0.3em;
+      font-size: 26px;
+      line-height: 1;
+      font-weight: 700;
+    }
+    p{
+      padding: 0.5em 1em;
+      line-height: 1.7;
+      opacity: 0.5;
+    }
+  }
 }
 </style>
