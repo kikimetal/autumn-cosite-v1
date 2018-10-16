@@ -30,7 +30,7 @@ export default{
 
     ;(function(d) {
       var config = {
-        kitId: 'kpq1waw',
+        kitId: 'ryo8wsk',
         scriptTimeout: 3000,
         async: true
       },

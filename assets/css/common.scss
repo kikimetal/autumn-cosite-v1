@@ -2,7 +2,9 @@
 
 :root{
   font-family:
-    "allumi-std", // typekit
+    "futura-pt", // typekit
+    'source-han-sans-japanese', // typekit
+    // "allumi-std", // typekit
     // "a-otf-ud-reimin-pr6n", // typekit
     'Helvetica Neue', /* Macの欧文 (OS X 10.10以前) */
     'Segoe UI',       /* Windowsの欧文 */
@@ -66,7 +68,7 @@
 
 // simple fade animation
 .fade-enter-active{
-  transition: all 0.5s ease;
+  transition: all 0.8s ease;
 }
 .fade-leave-active{
   transition: all 0.7s ease;
@@ -75,5 +77,19 @@
   opacity: 0;
 }
 .fade-enter{
+  opacity: 0;
+}
+
+// simple fade animation
+.video-enter-active{
+  transition: all 0.8s ease 0.5s;
+}
+.video-leave-active{
+  transition: all 0.7s ease;
+}
+.video-leave-to {
+  opacity: 0;
+}
+.video-enter{
   opacity: 0;
 }
