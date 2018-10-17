@@ -141,8 +141,7 @@ export default {
       flex-flow: row;
       justify-content: flex-start;
       align-items: center;
-      font-weight: 900;
-      // background: pink;
+      font-weight: 700;
       font-size: 26px;
       &.nuxt-link-exact-active{
         background: $grey-5;
@@ -160,20 +159,27 @@ export default {
     top: var(--progress-bar-height);
     left: 0;
     right: 0;
-    $height: 50px;
-    height: $height;
+    --height: 50px;
+    height: var(--height);
     display: flex;
     flex-flow: row;
     justify-content: flex-end;
     align-items: center;
     color: $white;
     z-index: 99;
+    @include md{
+      --height: 90px;
+    };
 
     .logo{
       margin-right: auto;
       padding-left: 4%;
       width: 35%;
       @include flex-center;
+
+      @include md{
+        width: 16%;
+      };
     }
 
     .progress-bar-container{
@@ -187,7 +193,8 @@ export default {
       // border-radius: var(--progress-bar-height);
       @include md{
         --progress-bar-height: 11px;
-        width: 22%;
+        // width: 22%;
+        // width: 100
       }
       .bar {
         height: var(--progress-bar-height);
@@ -201,7 +208,7 @@ export default {
 
     .contact{
       width: 13%;
-      height: $height;
+      height: var(--height);
       @include flex-center;
       justify-content: flex-start;
       img{
@@ -211,7 +218,7 @@ export default {
     }
     .menu{
       width: 17%;
-      height: $height;
+      height: var(--height);
       @include flex-center;
       // justify-content: flex-start;
       fill: $white;

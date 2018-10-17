@@ -1,4 +1,9 @@
 // breakpoint
+@mixin sm {
+  @media (max-width: (767px)) {
+    @content;
+  }
+}
 @mixin md {
   @media (min-width: (768px)) {
     @content;
@@ -10,18 +15,14 @@
   }
 }
 
-// font
-@mixin futura {
-  font-family: "futura-pt-bold", sans-serif;
-}
-
 // color
 $white: #fafafa;
 $grey-1: #E5E8EB;
-// $grey-2: #c4cbd0;
 $grey-2: #d8dde2;
+$grey-3: #c4c6d6;
 $grey-5: #9E9FA5;
 $black: #333B40;
+$bluegrey: #8ab3ba;
 
 @function pale($color) {
   @return lighten(desaturate($color, 9%), 6%);
