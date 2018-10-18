@@ -21,6 +21,7 @@ $grey-1: #E5E8EB;
 $grey-2: #d8dde2;
 $grey-3: #c4c6d6;
 $grey-5: #9E9FA5;
+$grey-7: #6b6d77;
 $black: #333B40;
 $bluegrey: #8ab3ba;
 
@@ -28,7 +29,7 @@ $bluegrey: #8ab3ba;
   @return lighten(desaturate($color, 9%), 6%);
 }
 @function dark($color) {
-  @return darken(desaturate($color, 20%), 15%);
+  @return darken(desaturate($color, 10%), 10%);
 }
 
 // easing
@@ -59,4 +60,21 @@ $ease-out-back-fast: cubic-bezier(.08,1,.91,1.15);
   @include lg {
     height: 55vw;
   }
+}
+
+@mixin image {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-top: 72%;
+  background-color: rgba(0,0,0,0.1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include md{
+    padding-top: 46%
+  };
+  @include lg{
+    padding-top: 32%;
+  };
 }

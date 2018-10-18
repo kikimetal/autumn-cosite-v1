@@ -1,7 +1,14 @@
 <template lang="html">
   <footer class="footer">
-    <span>2018 CARVANCL inc all right reserved.</span>
-    <span>&nbsp;/&nbsp;</span><router-link to="/privacy-policy">Privacy policy</router-link>
+    <h2 class="heading">[logo]Autumn Inc.</h2>
+    <div class="link-container">
+      <router-link exact to="/">Home</router-link>
+      <router-link exact to="/about">About Us</router-link>
+      <router-link exact to="/works">Works</router-link>
+      <router-link exact to="/company">Company</router-link>
+      <router-link exact to="/contact">Contact</router-link>
+    </div>
+    <div class="copyright">2018 CARVANCL inc all right reserved.</div>
   </footer>
 </template>
 
@@ -12,24 +19,28 @@ export default {
 
 <style lang="scss" scoped>
 @import '~/assets/css/myset.scss';
+
 .footer{
-  padding: 2.5rem 0.9rem 3.5rem;
+  font-size: 1.1em;
+  padding: 3em;
   background: $black;
   color: $white;
-  text-align: center;
-  font-size: 0.9rem;
-  line-height: 1.4;
-  *{
-    opacity: 0.5;
-    display: inline-block;
-  }
+  line-height: 2.4;
   a{
     text-decoration: underline;
   }
-  .logo{
-    width: 70%;
-    padding-bottom: 0.5rem;
-    opacity: 0.2;
+  .heading{
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  .link-container{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .copyright{
+    line-height: 4;
   }
 }
 </style>

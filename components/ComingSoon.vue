@@ -16,7 +16,7 @@ export default {
   width: 100%;
   height: 100vh;
   // background: $grey-2;
-  color: $white;
+  color: $grey-5;
   font-weight: 900;
   @include flex-center;
   flex-flow: column;

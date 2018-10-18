@@ -1,12 +1,8 @@
 <template>
-  <div id="default">
-    <!-- <div id="bg"><span>💙CARVANCL</span></div> -->
-    <div id="bg">
-      <!-- <img class="co-name" src="~/assets/img/nav/co-name.svg" alt="株式会社カーバンクルのロゴマーク"> -->
-    </div>
-    <Nav/>
-    <nuxt/>
-    <script defer src="https://www.youtube.com/iframe_api"></script>
+  <div id="default" @touchstart="() => {}">
+    <div id="bg" :class="$route.name" />
+    <Nav />
+    <nuxt />
   </div>
 </template>
 
@@ -63,7 +59,13 @@ export default{
   align-items: center;
   font-size: 3rem;
   font-weight: 900;
-  background: $grey-1;
+  // background: $grey-1;
+  background: #fff;
   z-index: -99;
+  transition: all 0.5s ease;
+
+  &.company{
+    background: $black;
+  }
 }
 </style>

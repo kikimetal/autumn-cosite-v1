@@ -1,9 +1,10 @@
 <template lang="html">
   <div id="nav">
 
-  <nav :class="['header', headerContextColor]">
+  <nav :class="['header', $route.name]">
     <router-link to="/" class="logo">
-      <img src="~/assets/img/nav/co-name.svg" alt="">
+      <!-- <img src="~/assets/img/co-name.svg" alt=""> -->
+      [logo] Autumn Inc.
     </router-link>
     <div class="progress-bar-container">
       <div class="bar" :class="[{transition: pageTransitionActive}]" :style="{width: progressBarWidth+'%'}"></div>
@@ -48,17 +49,6 @@ export default {
       headerContextColor: '',
     }
   },
-  methods: {
-    getContextColor () {
-      const route = this.$route.name
-      if (route === 'index') return 'skyblue'
-      else if (route === 'service') return 'black'
-      else if (route === 'u25') return 'violet'
-      else if (route === 'company') return 'violet-dark'
-      else if (route === 'contact') return 'red'
-      return 'red'
-    }
-  },
   created () {
     const setProgressBarWidth = () => {
       if (this.pageTransitionActive) return
@@ -74,12 +64,7 @@ export default {
       this.progressBarWidth = 0
       this.pageTransitionActive = true
       setTimeout(() => this.pageTransitionActive = false, 1500)
-
-      this.headerContextColor = this.getContextColor()
     })
-  },
-  mounted () {
-    this.headerContextColor = this.getContextColor()
   },
 }
 </script>
@@ -165,16 +150,27 @@ export default {
     flex-flow: row;
     justify-content: flex-end;
     align-items: center;
-    color: $white;
+    color: $black;
+    fill: $black;
     z-index: 99;
     @include md{
       --height: 90px;
     };
 
+    &.works{
+      color: $bluegrey;
+      fill: $bluegrey;
+    }
+    &.company{
+      color: $white;
+      fill: $white;
+    }
+
     .logo{
       margin-right: auto;
       padding-left: 4%;
       width: 35%;
+      font-weight: 700;
       @include flex-center;
 
       @include md{
@@ -221,7 +217,7 @@ export default {
       height: var(--height);
       @include flex-center;
       // justify-content: flex-start;
-      fill: $white;
+      fill: inherit;
     }
   }
 }
