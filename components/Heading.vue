@@ -47,6 +47,9 @@ export default {
   font-size: 21px;
   padding: 1.5em 1em 6em;
   color: $grey-7;
+  span{
+    display: inline-block;
+  }
   .title{
     font-size: 1.2em;
     color: $bluegrey;

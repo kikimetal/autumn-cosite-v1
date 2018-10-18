@@ -186,15 +186,12 @@ export default {
       right: 0;
       width: 100%;
       background: rgba(0,0,0,0.05);
-      // border-radius: var(--progress-bar-height);
       @include md{
         --progress-bar-height: 11px;
-        // width: 22%;
-        // width: 100
       }
       .bar {
         height: var(--progress-bar-height);
-        background: rgba($white, 0.6);
+        background: $bluegrey;
         width: 0%;
         &.transition{
           transition: width 0.4s $ease-out;
@@ -216,8 +213,8 @@ export default {
       width: 17%;
       height: var(--height);
       @include flex-center;
-      // justify-content: flex-start;
       fill: inherit;
+      cursor: pointer;
     }
   }
 }

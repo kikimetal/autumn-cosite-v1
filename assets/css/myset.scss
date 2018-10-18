@@ -45,36 +45,18 @@ $ease-out-back-fast: cubic-bezier(.08,1,.91,1.15);
   align-items: center;
 }
 
-@mixin section-simple {
-  position: relative;
-  width: 100%;
-  height: 190vw;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  color: $white;
-  @include md {
-    height: 58vw;
-  }
-  @include lg {
-    height: 55vw;
-  }
-}
-
+// とりあえずいい感じにイメージを挿入するとき。
+// これに加えて、background-image の指定が必要。
 @mixin image {
   position: relative;
   display: block;
   width: 100%;
-  padding-top: 72%;
+  padding-top: 77%;
   background-color: rgba(0,0,0,0.1);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   @include md{
-    padding-top: 46%
-  };
-  @include lg{
-    padding-top: 32%;
+    padding-top: 38%
   };
 }
