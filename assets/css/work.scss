@@ -1,8 +1,20 @@
 // /works/00 で使うスタイルセット
 @mixin work {
   font-size: 16px;
-  padding: 1.2em;
+  padding: 5%;
+  padding-bottom: 20%;
   color: $black;
+  @include md{
+    font-size: 18px;
+    padding: 5% 10%;
+    padding-bottom: 10%;
+  };
+  @include lg{
+    font-size: 20px;
+    padding: 5% calc((100vw - 900px) / 2);
+    padding-bottom: 10%;
+  };
+
   h1{
     font-size: 2.7em;
     font-weight: 700;
@@ -20,17 +32,21 @@
     padding: 1em 0 0.9em;
     line-height: 1.8;
   }
-  img, video{
+  img{
     padding: 1.3em 0 1.8em;
     width: 100%;
     height: auto;
     display: block;
   }
-
-  @include md{
-    font-size: 17px;
-  };
-  @include lg{
-    font-size: 18px;
-  };
+  .video{
+    margin: 1.3em 0 1.8em;
+    width: 100%;
+    height: calc(90vw * 9/16);
+    @include md{
+      height: calc(80vw * 9/16);
+    };
+    @include lg{
+      height: calc(900px * 9/16);
+    };
+  }
 }

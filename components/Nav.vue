@@ -30,10 +30,10 @@
     @click="$store.commit('toggleNav', false)">
       <!-- <h2 class="heading">MENU</h2> -->
       <router-link exact to="/" class="link">Home</router-link>
-      <router-link exact to="/works" class="link">Works</router-link>
       <router-link exact to="/about" class="link">About Us</router-link>
+      <router-link exact to="/works" class="link">Works</router-link>
       <router-link exact to="/company" class="link">Company</router-link>
-      <router-link exact to="/contact" class="link">Contact</router-link>
+      <router-link exact to="/contact" class="link">Contact Us</router-link>
     </nav>
   </transition>
 
