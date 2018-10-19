@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="page">
-    <div id="work-01">
+    <div id="work-02">
 
       <div class="top-image" />
 

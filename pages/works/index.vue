@@ -1,7 +1,9 @@
 <template lang="html">
   <div class="page">
     <div id="works">
+
       <div class="top-image" />
+
       <Heading
       title="Our motivation"
       :subtitle="['最良のアイデア、最良のアウトプット。']"

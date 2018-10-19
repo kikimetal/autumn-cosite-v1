@@ -28,7 +28,6 @@
     <nav class="global-menu"
     v-show="$store.state.isShowNav"
     @click="$store.commit('toggleNav', false)">
-      <!-- <h2 class="heading">MENU</h2> -->
       <router-link exact to="/" class="link">Home</router-link>
       <router-link exact to="/about" class="link">About Us</router-link>
       <router-link exact to="/works" class="link">Works</router-link>
@@ -157,13 +156,10 @@ export default {
       --height: 90px;
     };
 
-    &.works{
+    &.works,
+    &.company{
       color: $bluegrey;
       fill: $bluegrey;
-    }
-    &.company{
-      color: $white;
-      fill: $white;
     }
 
     .logo{

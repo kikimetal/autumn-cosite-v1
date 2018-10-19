@@ -1,13 +1,7 @@
 <template lang="html">
   <div class="page">
     <div id="contact">
-      <!-- <ComingSoon /> -->
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+
       <div class="form-group">
         <label for="form_title">タイトル</label>
         <input type="text" name="app[title]" class="form-control"

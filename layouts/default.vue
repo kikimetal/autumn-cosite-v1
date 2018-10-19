@@ -59,13 +59,12 @@ export default{
   align-items: center;
   font-size: 3rem;
   font-weight: 900;
-  // background: $grey-1;
   background: #fff;
   z-index: -99;
   transition: all 0.5s ease;
 
-  &.company{
-    background: $black;
-  }
+  // &.company{
+  //   background: $black;
+  // }
 }
 </style>
