@@ -63,7 +63,7 @@ export default {
     line-height: 1.4;
   }
   .message{
-    font-size: 0.95em;
+    font-size: 0.9em;
     line-height: 1.6;
     opacity: 0.5;
     span + span{
@@ -80,7 +80,7 @@ export default {
   }
 
   @include lg{
-    font-size: 28px;
+    font-size: 27px;
   }
 }
 </style>

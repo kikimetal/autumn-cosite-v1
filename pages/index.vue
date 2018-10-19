@@ -5,7 +5,7 @@
       <section>
         <div class="video-container" data-scroll data-so-scale v-parallax="0.4">
           <transition name="video" appear>
-            <video src="/video/test-03.mp4" playsinline muted autoplay loop></video>
+            <video src="/video/test.webm" playsinline muted autoplay loop></video>
           </transition>
         </div>
         <div class="text-container">
@@ -22,7 +22,7 @@
       <section>
         <div class="video-container" data-scroll data-so-scale v-parallax="0.6">
           <transition name="video" appear>
-            <video src="/video/test-03.mp4" playsinline muted autoplay loop></video>
+            <video src="/video/test.webm" playsinline muted autoplay loop></video>
           </transition>
         </div>
         <router-link to="/works/01">
@@ -40,7 +40,7 @@
       <section>
         <div class="video-container" data-scroll data-so-scale v-parallax="0.6">
           <transition name="video" appear>
-            <video src="/video/test-03.mp4" playsinline muted autoplay loop></video>
+            <video src="/video/test.webm" playsinline muted autoplay loop></video>
           </transition>
         </div>
         <router-link to="/works/02">
@@ -58,7 +58,7 @@
       <section>
         <div class="video-container" data-scroll data-so-scale v-parallax="0.6">
           <transition name="video" appear>
-            <video src="/video/test-03.mp4" playsinline muted autoplay loop></video>
+            <video src="/video/test.webm" playsinline muted autoplay loop></video>
           </transition>
         </div>
         <router-link to="/works/03">
@@ -136,8 +136,12 @@ br.md{
   position: relative;
   width: 84%;
   margin-left: 5%;
-  margin-bottom: 50vw;
+  margin-bottom: 45vw;
   font-size: 29px;
+  user-select: none;
+  @include md{
+    margin-bottom: 20vw;
+  }
   @include md{
     width: 77%;
     font-size: 4vw;
@@ -166,6 +170,12 @@ br.md{
     bottom: 0;
     background: rgba(0,0,0,0.5);
     z-index: 2;
+    transition: all 0.3s ease;
+  }
+  &:hover{
+    .shadow{
+      opacity: 0;
+    }
   }
   .heading{
     position: absolute;
@@ -256,7 +266,6 @@ br.md{
     padding: 1em 0 7em;
   };
 }
-
 
 
 section{

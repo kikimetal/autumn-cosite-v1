@@ -1,17 +1,17 @@
 <template lang="html">
   <div id="nav">
 
-  <nav :class="['header', $route.name]">
+  <nav :class="['header', $route.name, {isScrollTop: $store.state.isScrollTop}]">
     <router-link to="/" class="logo">
-      <!-- <img src="~/assets/img/co-name.svg" alt=""> -->
-      [logo] Autumn Inc.
+      <Logomark class="mark" />
+      <span class="type">Autumn Inc.</span>
     </router-link>
     <div class="progress-bar-container">
       <div class="bar" :class="[{transition: pageTransitionActive}]" :style="{width: progressBarWidth+'%'}"></div>
     </div>
     <span class="menu"
     @click="$store.commit('toggleNav')">
-      <box-icon name='menu-alt-right' size="md" class="bars"></box-icon>
+      <box-icon name='menu-alt-right' size="lg" class="bars"></box-icon>
     </span>
   </nav>
 
@@ -40,7 +40,11 @@
 </template>
 
 <script>
+import Logomark from '~/components/Logomark.vue'
 export default {
+  components: {
+    Logomark,
+  },
   data () {
     return {
       progressBarWidth: 0,
@@ -143,35 +147,71 @@ export default {
     top: var(--progress-bar-height);
     left: 0;
     right: 0;
-    --height: 50px;
+    --height: 60px;
     height: var(--height);
     display: flex;
     flex-flow: row;
     justify-content: flex-end;
     align-items: center;
-    color: $black;
-    fill: $black;
     z-index: 99;
+    transition: all 0.3s ease;
     @include md{
-      --height: 90px;
+      --height: 95px;
     };
+
+    color: $grey-8;
+    fill: $grey-8;
 
     &.works,
     &.company{
       color: $bluegrey;
       fill: $bluegrey;
     }
+    &.isScrollTop{
+      color: $white;
+      fill: $white;
+    }
+    &.index{
+      color: $bluegrey;
+      fill: $bluegrey;
+    }
 
     .logo{
       margin-right: auto;
-      padding-left: 4%;
-      width: 35%;
+      padding-top: 2%;
+      width: 36%;
       font-weight: 700;
+      font-size: 20px;
+      font-size: 4.4vw;
       @include flex-center;
-
+      flex-flow: row;
+      .mark{
+        width: 26%;
+        padding-right: 3%;
+        padding-bottom: 3%;
+      }
+      .type{}
       @include md{
-        width: 16%;
+        // padding-top: 0.%;
+        width: 26%;
+        font-size: 2.5vw;
       };
+    }
+
+    .menu{
+      width: 12%;
+      @include flex-center;
+      transform: scale(0.86);
+      padding-top: 1.2%;
+      fill: inherit;
+      cursor: pointer;
+      @include md{
+        width: 11%;
+        transform: scale(1.3);
+      };
+      svg{
+        width: inherit;
+      }
     }
 
     .progress-bar-container{
@@ -193,24 +233,6 @@ export default {
           transition: width 0.4s $ease-out;
         }
       }
-    }
-
-    .contact{
-      width: 13%;
-      height: var(--height);
-      @include flex-center;
-      justify-content: flex-start;
-      img{
-        display: block;
-        width: 48%;
-      }
-    }
-    .menu{
-      width: 17%;
-      height: var(--height);
-      @include flex-center;
-      fill: inherit;
-      cursor: pointer;
     }
   }
 }
