@@ -45,7 +45,7 @@ export default {
 
 .Heading{
   font-size: 21px;
-  padding: 1.5em 1em 6em;
+  padding: 1.5em 1em 4.5em;
   color: $grey-7;
   span{
     display: inline-block;
@@ -72,7 +72,7 @@ export default {
   }
 
   @include md{
-    padding: 3em 8vw 6em;
+    padding: 3.4em 8vw 4em;
     font-size: 25px;
     box-sizing: content-box;
     max-width: 1000px;
