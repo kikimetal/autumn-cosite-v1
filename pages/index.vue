@@ -5,31 +5,34 @@
       <section>
         <div class="video-container" data-scroll data-so-scale v-parallax="0.4">
           <transition name="video" appear>
-            <video src="/video/test.webm" playsinline muted autoplay loop></video>
+            <video src="/video/top.mp4" playsinline muted autoplay loop></video>
           </transition>
         </div>
         <div class="text-container">
-          <h1>良いクリエイティブを<br class="md"/>もっと世に広げる</h1>
-          <p>Autumnは新鮮な映像体験を京都から発信するクリエイティブチームです。</p>
+          <h1>あなたの世界に<br class="sm"/>興味がある</h1>
+          <p>
+            Autumnはあなたとともに本質的な課題と向き合い、<br class="md">
+            「創作の喜び」を共有するクリエイティブチームです。
+          </p>
         </div>
       </section>
 
       <h1 class="heading-works" data-scroll data-so-scale v-parallax="0.4">
         Our works
-        <span>あっと驚くヴィジュアルは専門知識だけでなく<br class="md"/>思考の多様性から生まれます</span>
+        <!-- <span>あなたと (・ω・) むきあう</span> -->
       </h1>
 
       <section>
         <div class="video-container" data-scroll data-so-scale v-parallax="0.6">
           <transition name="video" appear>
-            <video src="/video/test.webm" playsinline muted autoplay loop></video>
+            <video src="/video/chi.mp4" playsinline muted autoplay loop></video>
           </transition>
         </div>
         <router-link to="/works/01">
           <div class="text-container">
-            <h2>Total visual creation</h2>
-            <h1>今時のお坊は<span class="en">EDM</span></h1>
-            <p>Autumnは新鮮な映像体験を京都から発信するクリエイティブチームです</p>
+            <h2>Total visual Creation</h2>
+            <h1>お坊さんの新たな一面を<br class="md">驚きとともに</h1>
+            <p>浄土宗総本山知恩院様 ビジュアル制作</p>
           </div>
           <div class="btn" v-parallax="-0.2">
             <box-icon class="arrow" size="lg" type='solid' name='right-arrow'></box-icon>
@@ -40,14 +43,14 @@
       <section>
         <div class="video-container" data-scroll data-so-scale v-parallax="0.6">
           <transition name="video" appear>
-            <video src="/video/test.webm" playsinline muted autoplay loop></video>
+            <video src="/video/che.mp4" playsinline muted autoplay loop></video>
           </transition>
         </div>
         <router-link to="/works/02">
           <div class="text-container">
             <h2>Material design</h2>
-            <h1>三栄<span class="en">Creative</span></h1>
-            <p>Autumnは新鮮な映像体験を京都から発信するクリエイティブチームです</p>
+            <h1>革新的なプロダクトの魅力を<br class="md">余さず届ける</h1>
+            <p>三栄メディシス株式会社様 Check me pro X CG・映像制作</p>
           </div>
           <div class="btn" v-parallax="-0.2">
             <box-icon class="arrow" size="lg" type='solid' name='right-arrow'></box-icon>
@@ -58,14 +61,14 @@
       <section>
         <div class="video-container" data-scroll data-so-scale v-parallax="0.6">
           <transition name="video" appear>
-            <video src="/video/test.webm" playsinline muted autoplay loop></video>
+            <video src="/video/eru.mp4" playsinline muted autoplay loop></video>
           </transition>
         </div>
         <router-link to="/works/03">
           <div class="text-container">
             <h2>Visual creation for Branding</h2>
-            <h1>てのひらえるの初映像作品</h1>
-            <p>只者ではないアイドルとしての信念や情熱の表現</p>
+            <h1>てのひらえるを<br class="md">新たな境地へ</h1>
+            <p>ink＊inkプロダクション所属 てのひらえる様 MV制作</p>
           </div>
           <div class="btn" v-parallax="-0.2">
             <box-icon class="arrow" size="lg" type='solid' name='right-arrow'></box-icon>
@@ -93,10 +96,10 @@
           <div class="shadow" />
           <div class="heading">
             <h1>Contact Us</h1>
-            <p>私たちと驚きの見せ方を検討しましょう</p>
+            <p>私たちと、驚きの見せ方を創造しましょう</p>
           </div>
         </div>
-        <router-link to="/about" class="btn" v-parallax="-0.1">
+        <router-link to="/contact" class="btn" v-parallax="-0.1">
           <span>お問い合わせ</span><box-icon name='chevron-right'></box-icon>
         </router-link>
       </div>
@@ -126,12 +129,6 @@ export default {
 <style lang="scss" scoped>
 @import '~/assets/css/myset.scss';
 
-br.md{
-  @include sm{
-    display: none;
-  }
-}
-
 .link-to{
   position: relative;
   width: 84%;
@@ -154,7 +151,7 @@ br.md{
     width: 100%;
     padding-top: 96%;
     z-index: 1;
-    background-image: url(~assets/img/about.jpg);
+    background-image: url(~assets/img/about-top.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -174,7 +171,7 @@ br.md{
   }
   &:hover{
     .shadow{
-      opacity: 0;
+      opacity: 0.4;
     }
   }
   .heading{
@@ -227,7 +224,7 @@ br.md{
 
   &.about{
     .img{
-      background-image: url(~assets/img/about.jpg);
+      background-image: url(~assets/img/about-top.jpg);
     }
   }
   &.contact{
@@ -235,7 +232,7 @@ br.md{
     margin-right: 5%;
     margin-top: 20vw;
     .img{
-      background-image: url(~assets/img/contact.jpg);
+      background-image: url(~assets/img/contact-us.jpg);
     }
     .btn{
       right: auto;

@@ -19,7 +19,11 @@
 
             <div class="text">
               <div class="name">{{ row.name }}</div>
-              <div class="message">{{ row.message }}</div>
+              <div class="message">
+                <div v-if="row.job" class="job">{{ row.job }}</div>
+                <div>{{ row.message }}</div>
+                <a v-if="row.external" class="external" :href="row.external">{{ row.external }}</a>
+              </div>
               <div class="share">
                 <a v-if="row.fb" class="fb" :href="row.fb">
                   <box-icon type='logo' name='facebook'></box-icon>
@@ -54,66 +58,105 @@ export default {
     return {
       memberArray: [
         {
-          name: 'あずきあらい',
-          message: 'ヨーロッパ1のイラストレーターになっとる夢を見ました。つまりそういうことだと思います。',
-          fb: 'https://twitter.com/ari_azk',
-          tw: 'https://twitter.com/ari_azk',
-          insta: 'https://twitter.com/ari_azk',
-          banner: require('~/assets/img/about/azuki/banner.jpg'),
-          icon: require('~/assets/img/about/azuki/icon.jpg'),
+          name: 'miyabi konishi',
+          job: 'Director/Producer/Colorist/Photographer/UXdesigner',
+          message: '世界で活躍できるディレクターとして想いを強く引き出し制作物に反映できる人を目指しています。あらゆる人と物から自然に出て来る表情が好きです。飼い猫がかわいい。名前はにぼしです。',
+          fb: 'https://www.facebook.com/db.cola',
+          tw: 'https://twitter.com/Msa_a0',
+          insta: 'http://instagram.com/miyabikonishi',
+          banner: require('~/assets/img/about/miyabi/banner.jpg'),
+          icon: require('~/assets/img/about/miyabi/icon.jpg'),
         },
         {
-          name: 'おーたむにく',
-          message: '主に人間の相(Phase)について考えています。絶賛受験勉強中！ ▼ 知恩院機関誌『華頂』にて紙芝居連載 / キリスト新聞『宗教リテラシー向上委員会』他イラスト寄稿 / 『小論文が、よく書ける原稿用紙』(表紙・マンガ制作) / 冥土喫茶ぴゅあらんど',
-          fb: 'https://twitter.com/ari_azk',
-          tw: null,
+          name: 'YANDY',
+          job: 'Cinematographer/Creative director',
+          message: '何事にもクリエイトする心を忘れない。褒められることを生きがいとしている人間です。',
+          fb: 'https://www.facebook.com/profile.php?id=100014044392071',
+          tw: 'https://twitter.com/Autumn_yandy',
+          insta: 'https://www.instagram.com/yandy_yamashita/?hl=ja',
+          banner: require('~/assets/img/about/yandy/banner.jpg'),
+          icon: require('~/assets/img/about/yandy/icon.jpg'),
+        },
+        {
+          name: 'NixoN',
+          job: 'Director / λογος / illustrator / Religious study',
+          message: 'Εν αρχη ην ο λογος. 人の相を捉えるべく、その辺をうろうろしています。',
+          fb: null,
+          tw: 'https://twitter.com/2___o0oOo0o___9',
           insta: null,
           banner: require('~/assets/img/about/niku/banner.jpg'),
           icon: require('~/assets/img/about/niku/icon.jpg'),
         },
         {
+          name: '地村俊也',
+          job: 'Cinematographer/Drone Operator/Colorist/DIT',
+          message: '美しい映像は、何かを伝える最高の言語だと思う。シネマティックな作風が持ち味。近年は空からもシネマティック。',
+          external: 'https://www.youtube.com/user/toshiya161',
+          fb: null,
+          tw: 'https://twitter.com/ari_azk',
+          insta: null,
+          banner: require('~/assets/img/about/chimura/banner.jpg'),
+          icon: require('~/assets/img/about/chimura/icon.jpg'),
+        },
+        {
+          name: 'あずきあらい',
+          job: 'Illustrator',
+          message: 'ファンタジー世界に生きたい。チャイナ服の魅力に気が付き始めました。女の子の好きな部位はサガリです',
+          fb: null,
+          tw: 'https://twitter.com/ari_azk',
+          insta: null,
+          banner: require('~/assets/img/about/azuki/banner.jpg'),
+          icon: require('~/assets/img/about/azuki/icon.jpg'),
+        },
+        {
           name: 'KIKIMETAL',
-          message: 'ハッピーふとももカーニバル!',
+          job: 'デザイン/UIUX/Webフロントエンド',
+          message: '色々やります。価値あるふとももをプロディースしたいです。',
           fb: null,
           tw: 'https://twitter.com/qiqimetal',
+          insta: null,
           banner: require('~/assets/img/about/kikimetal/banner.jpg'),
           icon: require('~/assets/img/about/kikimetal/icon.jpg'),
         },
         {
-          name: 'あずきあらい',
-          message: 'ヨーロッパ1のイラストレーターになっとる夢を見ました。つまりそういうことだと思います。',
+          name: '多々良さん(Tatara)',
+          job: 'Illustrator',
+          message: '美少女が好きすぎて美少女になりたいです。',
+          external: 'http://hasikiku.tumblr.com',
           fb: null,
-          tw: 'https://twitter.com/ari_azk',
-          insta: 'https://twitter.com/ari_azk',
-          banner: require('~/assets/img/about/azuki/banner.jpg'),
-          icon: require('~/assets/img/about/azuki/icon.jpg'),
+          tw: 'https://twitter.com/nabenofuta33',
+          insta: null,
+          banner: require('~/assets/img/about/tatara/banner.jpg'),
+          icon: require('~/assets/img/about/tatara/icon.jpg'),
         },
         {
-          name: 'あずきあらい',
-          message: 'ヨーロッパ1のイラストレーターになっとる夢を見ました。つまりそういうことだと思います。',
+          name: 'Yuzu Wakakusa / 若草 ゆず',
+          job: '3DCG | Modeling / Animation',
           fb: null,
-          tw: 'https://twitter.com/ari_azk',
-          insta: 'https://twitter.com/ari_azk',
-          banner: require('~/assets/img/about/azuki/banner.jpg'),
-          icon: require('~/assets/img/about/azuki/icon.jpg'),
+          tw: 'https://twitter.com/yuzu_wakakusa',
+          insta: null,
+          banner: require('~/assets/img/about/yuzu/banner.jpg'),
+          icon: require('~/assets/img/about/yuzu/icon.jpg'),
         },
+        // {
+        //   name: 'Araka8/Shin1',
+        //   job: 'ファシリテーション/チームビルディング',
+        //   message: '良いチームが良いアウトプットを出します。良いチームを継続するには良いディスカスが必要不可欠です。僕たちはあなたのディスカスの質を引き上げます。',
+        //   fb: null,
+        //   tw: null,
+        //   insta: null,
+        //   banner: require('~/assets/img/about/yuzu/banner.jpg'),
+        //   icon: require('~/assets/img/about/yuzu/icon.jpg'),
+        // },
         {
-          name: 'あずきあらい',
-          message: 'ヨーロッパ1のイラストレーターになっとる夢を見ました。つまりそういうことだと思います。',
-          fb: null,
-          tw: 'https://twitter.com/ari_azk',
-          insta: 'https://twitter.com/ari_azk',
-          banner: require('~/assets/img/about/azuki/banner.jpg'),
-          icon: require('~/assets/img/about/azuki/icon.jpg'),
-        },
-        {
-          name: 'あずきあらい',
-          message: 'ヨーロッパ1のイラストレーターになっとる夢を見ました。つまりそういうことだと思います。',
-          fb: null,
-          tw: 'https://twitter.com/ari_azk',
-          insta: 'https://twitter.com/ari_azk',
-          banner: require('~/assets/img/about/azuki/banner.jpg'),
-          icon: require('~/assets/img/about/azuki/icon.jpg'),
+          name: 'yutaka yoshida',
+          job: 'Management/Producer',
+          message: '一応代表です。偉くはないです',
+          fb: 'https://www.facebook.com/y.yutaka.narukuma',
+          tw: null,
+          insta: null,
+          banner: require('~/assets/img/about/yutaka/banner.jpg'),
+          icon: require('~/assets/img/about/yutaka/icon.jpg'),
         },
       ],
     }
@@ -128,7 +171,7 @@ export default {
 
 .top-image{
   @include image;
-  background-image: url(~assets/img/contact.jpg);
+  background-image: url(~assets/img/about-top.jpg);
 }
 
 .container{
@@ -198,8 +241,18 @@ export default {
           font-weight: 700;
           line-height: 1.8;
         }
+        .job{
+          padding-bottom: 0.4em;
+          font-size: 0.9em;
+        }
         .message{
-          opacity: 0.5;
+          opacity: 0.6;
+        }
+        .external{
+          font-size: 0.86em;
+          color: dark($bluegrey);
+          font-family: helvetica, arial, sans-serif;
+          text-decoration: underline;
         }
       }
 

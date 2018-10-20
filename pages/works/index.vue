@@ -7,14 +7,15 @@
       <Heading
       title="Our motivation"
       :subtitle="['最良のアイデア、最良のアウトプット。']"
-      message="想像性と実用性は相入れないという感覚は、現実に、クリエイティブなアイデアを嫌うという微妙なバイアスを人の心にかけることがあります。"
+      message="クリエティブそのものは運用手法を組み合わせることによって、より効果が高くなることを私たちはよく知っています。"
       />
 
       <section>
         <router-link to="/works/01" class="image" data-scroll>
           <div class="heading">
-            <span class="subtitle">Visual creation for Branding</span>
-            <h1 class="title">知恩院大爆発</h1>
+            <span class="subtitle">Total visual Creation</span>
+            <h1 class="title">お坊さんの新たな一面を<br class="md">驚きとともに</h1>
+            <p>浄土宗総本山知恩院様 ビジュアル制作</p>
             <div class="btn">
               <span>もっと見る</span><box-icon name='chevron-right'></box-icon>
             </div>
@@ -22,10 +23,7 @@
         </router-link>
         <div class="text" data-scroll>
           <p>
-            彼女の持つ只者ではないアイドルとしての信念や情熱。
-          </p>
-          <p>
-            視覚の中で彼女の思いをあなたへ届けるための工夫は、彼女のブランディングへ立ち返ることでした。
+            私たちは彼らのことを雲の上の存在だと思っていたが、素顔に迫ってみると、彼らは等身大の人間だった。
           </p>
         </div>
       </section>
@@ -33,8 +31,9 @@
       <section>
         <router-link to="/works/02" class="image" data-scroll>
           <div class="heading">
-            <span class="subtitle">Visual creation for Branding</span>
-            <h1 class="title">てのひらえるの初映像作品</h1>
+            <span class="subtitle">Material design</span>
+            <h1 class="title">革新的なプロダクトの魅力を<br class="md">余さず届ける</h1>
+            <p>三栄メディシス株式会社様 Check me pro X CG・映像制作</p>
             <div class="btn">
               <span>もっと見る</span><box-icon name='chevron-right'></box-icon>
             </div>
@@ -42,10 +41,10 @@
         </router-link>
         <div class="text" data-scroll>
           <p>
-            彼女の持つ只者ではないアイドルとしての信念や情熱。
+            優れたプロダクトのブランドイメージをCG技術を用いて再現。
           </p>
           <p>
-            視覚の中で彼女の思いをあなたへ届けるための工夫は、彼女のブランディングへ立ち返ることでした。
+            プロダクトが日常に溶け込むイメージを親しみのある映像へと落とし込みました。
           </p>
         </div>
       </section>
@@ -54,7 +53,8 @@
         <router-link to="/works/03" class="image" data-scroll>
           <div class="heading">
             <span class="subtitle">Visual creation for Branding</span>
-            <h1 class="title">てのひらえるの初映像作品</h1>
+            <h1 class="title">てのひらえるを<br class="md">新たな境地へ</h1>
+            <p>ink＊inkプロダクション所属 てのひらえる様 MV制作</p>
             <div class="btn">
               <span>もっと見る</span><box-icon name='chevron-right'></box-icon>
             </div>
@@ -141,12 +141,17 @@ section{
       .title{
         font-size: 1.3em;
         font-weight: 600;
+        padding: 0.2em 0;
+      }
+      p{
+        opacity: 0.8;
+        font-size: 0.9em;
       }
       .btn{
         font-size: 0.84em;
         padding: 0.5em 1em 0.5em 1.3em;
         margin: auto;
-        margin-top: 0.7em;
+        margin-top: 1em;
         width: 12em;
         border-radius: 3em;
         border: 2px solid $white;
@@ -181,12 +186,12 @@ section{
 
   &:nth-of-type(1){
     .image{
-      background-image: url(~assets/img/about.jpg);
+      background-image: url(~assets/img/work-chi.jpg);
     }
   }
   &:nth-of-type(2){
     .image{
-      background-image: url(~assets/img/contact.jpg);
+      background-image: url(~assets/img/work-sanei.jpg);
     }
   }
   &:nth-of-type(3){

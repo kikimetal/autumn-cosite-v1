@@ -5,22 +5,27 @@
       <div class="top-image" />
 
       <div class="work">
-        <h1>Visual creation for Branding</h1>
-        <h2>機は熟して、新しく魅せる。<br>てのひらえる。</h2>
-        <p>想像性と実用性は相入れないという感覚は、現実に、クリエイティブなアイデアを嫌うという微妙なバイアスを人の心にかけることがあります。</p>
-        <p>想像性と実用性は相入れないという感覚は、現実に、クリエイティブなアイデアを嫌うという微妙なバイアスを人の心にかけることがあります。</p>
-        <img src="~assets/img/works.jpg" alt="">
-        <br>
-        <br>
-        <h1>Creation process</h1>
-        <p>想像性と実用性は相入れないという感覚は、現実に、クリエイティブなアイデアを嫌うという微妙なバイアスを人の心にかけることがあります。</p>
-        <h2>Visual creation for Branding</h2>
-        <div class="video"><youtube video-id="rnSsptZaYsM" :style="{width: 'inherit', height: 'inherit'}"/></div>
-        <h2>Visual creation for Branding</h2>
-        <img src="~assets/img/about.jpg" alt="">
-        <h1>Impact</h1>
-        <p>想像性と実用性は相入れないという感覚は、現実に、クリエイティブなアイデアを嫌うという微妙なバイアスを人の心にかけることがあります。</p>
-        <img src="~assets/img/contact.jpg" alt="">
+        <h1>Outline</h1>
+        <p>
+          これまで、てのひらえるのアイドルとしてのチャネル（発信媒体）はtwitterとLIVEのみであり、新たなチャネルの開拓が課題とされていました。
+        </p>
+        <p>
+          中でも名刺代わりとなるMVはファンからも切望されており、これまで応援してくれたことへの感謝のかたちとしてプレゼントするとともに、てのひらえるの新たな境地を映像のなかに表現し、新規ファン獲得の接点としても機能させることを目指しました。
+        </p>
+        <img src="~assets/img/works/el/el-introduction.jpg" alt="">
+
+        <br><br><br>
+
+        <h1>Output</h1>
+        <h2>ーーー既存のイメージを打ち破り、新しいアイドル像を創る</h2>
+        <p>
+          わたしたちAutumnはヒアリングにおいて、彼女のアイドルとしての信念、これから実現していきたいことなどをお聞きし、話の中から感じられた彼女の「只者ではない」情熱をイメージの中に抽出しました。
+        </p>
+        <p>
+          また今後の展開を見据え、彼女の所属するInk Inkプロダクションともブランディングにおける方向性を共有し、目指すアイドル像を表現するための継続的なプロジェクトとして関わりをスタートさせました。
+        </p>
+        <img src="~assets/img/works/el/el-output1.jpg" alt="">
+        <img src="~assets/img/works/el/el-output2.jpg" alt="">
       </div>
 
     </div>
@@ -49,7 +54,7 @@ export default {
 @import '~/assets/css/work.scss';
 .top-image{
   @include image;
-  background-image: url(~assets/img/works.jpg);
+  background-image: url(~assets/img/works/el/el-top.jpg);
 }
 .work{
   @include work;

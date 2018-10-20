@@ -5,22 +5,22 @@
       <div class="top-image" />
 
       <div class="work">
-        <h1>Visual creation for Branding</h1>
-        <h2>機は熟して、新しく魅せる。<br>てのひらえる。</h2>
-        <p>想像性と実用性は相入れないという感覚は、現実に、クリエイティブなアイデアを嫌うという微妙なバイアスを人の心にかけることがあります。</p>
-        <p>想像性と実用性は相入れないという感覚は、現実に、クリエイティブなアイデアを嫌うという微妙なバイアスを人の心にかけることがあります。</p>
-        <img src="~assets/img/works.jpg" alt="">
-        <br>
-        <br>
-        <h1>Creation process</h1>
-        <p>想像性と実用性は相入れないという感覚は、現実に、クリエイティブなアイデアを嫌うという微妙なバイアスを人の心にかけることがあります。</p>
-        <h2>Visual creation for Branding</h2>
-        <div class="video"><youtube video-id="rnSsptZaYsM" :style="{width: 'inherit', height: 'inherit'}"/></div>
-        <h2>Visual creation for Branding</h2>
-        <img src="~assets/img/about.jpg" alt="">
-        <h1>Impact</h1>
-        <p>想像性と実用性は相入れないという感覚は、現実に、クリエイティブなアイデアを嫌うという微妙なバイアスを人の心にかけることがあります。</p>
-        <img src="~assets/img/contact.jpg" alt="">
+        <h1>Outline</h1>
+        <img src="~assets/img/works/sanei/sanei-introduction.jpg" alt="">
+        <p>
+          三栄メディシス（株）様のプロダクト「Check me pro X」が2018年度グッドデザイン賞を受賞したことに伴い、リニューアルした商品Webページで使用する映像の制作を担当しました。
+        </p>
+
+        <br><br><br>
+
+        <h1>Output</h1>
+        <h2>ーーー革新的なプロダクトの魅力を余さず届ける</h2>
+        <p>
+          メインビジュアルではCGを用い、商品の持つ高級感と機能性を忠実に表現しました。
+          ハウツー映像においてはブランドイメージを尊重しつつ、「Check me pro X」が生活の一部として新たなスタンダードとなっているストーリーを演出しました。
+        </p>
+        <!-- <div class="video"><youtube video-id="rnSsptZaYsM" :style="{width: 'inherit', height: 'inherit'}"/></div> -->
+        <img src="~assets/img/works/sanei/sanei-output1.jpg" alt="">
       </div>
 
     </div>
@@ -49,7 +49,7 @@ export default {
 @import '~/assets/css/work.scss';
 .top-image{
   @include image;
-  background-image: url(~assets/img/contact.jpg);
+  background-image: url(~assets/img/works/sanei/sanei-top.jpg);
 }
 .work{
   @include work;

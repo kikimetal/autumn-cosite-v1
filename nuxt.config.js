@@ -5,17 +5,19 @@ module.exports = {
   mode: 'spa',
 
   head: {
-    title: 'autumn-cosite-v1',
+    title: '株式会社Autumn オータム',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
-      { hid: 'description', name: 'description', content: 'autumn corporate site' },
+      { hid: 'description', name: 'description', content: '株式会社Autumnオータムは新鮮な映像体験を京都から発信するクリエイティブ映像製作会社です。' },
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
       { name: 'apple-mobile-web-app-status-bar-style', content: 'default' },
     ],
     link: [
-      // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      // { rel: 'stylesheet', href: 'https://use.typekit.net/ozu0idc.css' },
+      { rel: 'icon', type: 'image/vnd.microsoft.icon', href: '/favicon.ico' },
+      { rel: 'shortcut icon', type: 'image/vnd.microsoft.icon', href: '/favicon.ico' },
+      { rel: 'apple-touch-icon', sizes: '152x152', href: '/apple-touch-icon.png' },
+      { rel: 'apple-touch-startup-image', href: '/apple-touch-icon.png' },
     ]
   },
   /*

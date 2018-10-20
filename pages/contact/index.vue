@@ -36,7 +36,7 @@ export default {
 @import '~/assets/css/myset.scss';
 .top-image{
   @include image;
-  background-image: url(~assets/img/contact.jpg);
+  background-image: url(~assets/img/contact-us.jpg);
 }
 #contact{
   padding-bottom: 20%;

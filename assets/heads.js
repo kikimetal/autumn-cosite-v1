@@ -1,4 +1,4 @@
-const base = ' | 株式会社Autumn 若手に響く驚きと新鮮さを作る映像製作会社'
+const base = ' | 株式会社Autumn オータム 若手に響く驚きと新鮮さを作る映像製作会社'
 const common = {
   meta: [
     // { name: 'fb:admins', content: 'admin id' },
@@ -9,8 +9,7 @@ const common = {
     // { name: 'og:description', content: 'og description' },
     // { name: 'og:image', content: 'og image' },
   ],
-  link: [
-  ],
+  link: [],
 }
 
 // NUXT に渡すためのフォーマッター
@@ -26,22 +25,22 @@ const generate = data => ({
 export default {
   '/': generate({
     title: 'Home',
-    description: '',
+    description: '株式会社Autumnオータムは新鮮な映像体験を京都から発信するクリエイティブ映像製作会社です。',
   }),
   '/works': generate({
     title: 'Works',
-    description: '',
+    description: '株式会社Autumnの実績紹介です。',
   }),
   '/about': generate({
     title: 'About Us',
-    description: '',
+    description: '株式会社Autumnのメンバーです。',
   }),
   '/company': generate({
     title: 'Company',
-    description: '',
+    description: '株式会社Autumnの会社情報です。',
   }),
   '/contact': generate({
     title: 'Contact',
-    description: '',
+    description: 'お問い合わせはこちら',
   }),
 }

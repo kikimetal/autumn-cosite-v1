@@ -5,22 +5,31 @@
       <div class="top-image" />
 
       <div class="work">
-        <h1>Visual creation for Branding</h1>
-        <h2>機は熟して、新しく魅せる。<br>てのひらえる。</h2>
-        <p>想像性と実用性は相入れないという感覚は、現実に、クリエイティブなアイデアを嫌うという微妙なバイアスを人の心にかけることがあります。</p>
-        <p>想像性と実用性は相入れないという感覚は、現実に、クリエイティブなアイデアを嫌うという微妙なバイアスを人の心にかけることがあります。</p>
-        <img src="~assets/img/works.jpg" alt="">
-        <br>
-        <br>
-        <h1>Creation process</h1>
-        <p>想像性と実用性は相入れないという感覚は、現実に、クリエイティブなアイデアを嫌うという微妙なバイアスを人の心にかけることがあります。</p>
-        <h2>Visual creation for Branding</h2>
-        <div class="video"><youtube video-id="rnSsptZaYsM" :style="{width: 'inherit', height: 'inherit'}"/></div>
-        <h2>Visual creation for Branding</h2>
-        <img src="~assets/img/about.jpg" alt="">
-        <h1>Impact</h1>
-        <p>想像性と実用性は相入れないという感覚は、現実に、クリエイティブなアイデアを嫌うという微妙なバイアスを人の心にかけることがあります。</p>
-        <img src="~assets/img/contact.jpg" alt="">
+        <h1>Outline</h1>
+        <p>
+          現代のお寺は多くの課題を抱えており、
+          それらの根本にある要因として「若い世代のお寺離れ」「日常における接点の少なさ」が挙げられます。
+        </p>
+        <p>
+          今回ターゲットとして設定した「若者たち」は、お寺との接点すら得られないまま、イメージや先入観のみでお寺に来る機会を失っています。
+          わたしたちAutumnはクライアントとの関わりの中でお坊さんの「親しみやすさ」を発見し、単に奇を衒うのではなく最も効果的に彼らの魅力を伝える方法を企画しました。
+        </p>
+        <img src="~assets/img/works/chi/chionin-introduction.jpg" alt="">
+
+        <br><br><br>
+
+        <h1>Output</h1>
+        <h2>ーーー「堅いお寺」から「身近なお寺」へ</h2>
+        <p>
+          以前よりクライアント周りで使用されていた「ナムい」というバズワードを前面に押し出し、ポスター・フライヤー及びPR映像の制作を行いました。
+          ポスターにおいては「フェス」をモチーフに高揚感を演出。
+          PR映像では3本の動画によってさまざまな側面から「お坊さんの素顔を魅せる」ことに注力しました。
+        </p>
+        <!-- https://www.youtube.com/watch?v=1zAm1YBjSME&feature=youtu.be -->
+        <div class="video"><youtube video-id="1zAm1YBjSME" :style="{width: 'inherit', height: 'inherit'}"/></div>
+        <img src="~assets/img/works/chi/chionin-output1.jpg" alt="">
+        <img src="~assets/img/works/chi/chionin-output2.jpg" alt="">
+        <img src="~assets/img/works/chi/chionin-output3.jpg" alt="">
       </div>
 
     </div>
@@ -49,7 +58,7 @@ export default {
 @import '~/assets/css/work.scss';
 .top-image{
   @include image;
-  background-image: url(~assets/img/about.jpg);
+  background-image: url(~assets/img/works/chi/chionin-top.jpg);
 }
 .work{
   @include work;

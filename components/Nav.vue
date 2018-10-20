@@ -104,12 +104,16 @@ export default {
 
   .global-menu{
     position: fixed;
-    top: 10%;
+    top: 12%;
     left: 0;
     right: 0;
-    padding: 2em 1rem;
+    padding: 3.8em 2rem 4em;
     margin: 0 auto;
-    width: 90%;
+    width: 93%;
+    @include md{
+      width: 70%;
+      padding: 10%;
+    };
     min-height: 300px;
     background: $white;
     color: $black;
@@ -122,7 +126,7 @@ export default {
       opacity: 0.3;
     }
     .link{
-      padding-left: 2.6vw;
+      padding-left: 4vw;
       margin-bottom: 2px;
       line-height: 2;
       display: flex;
