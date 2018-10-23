@@ -101,7 +101,7 @@ export default {
         {
           name: 'あずきあらい',
           job: 'Illustrator',
-          message: 'ファンタジー世界に生きたい。チャイナ服の魅力に気が付き始めました。女の子の好きな部位はサガリです',
+          message: 'ファンタジー世界に生きたい。チャイナ服の魅力に気が付き始めました。女の子の好きな部位はサガリです。',
           fb: null,
           tw: 'https://twitter.com/ari_azk',
           insta: null,
@@ -110,8 +110,8 @@ export default {
         },
         {
           name: 'KIKIMETAL',
-          job: 'デザイン/UIUX/Webフロントエンド',
-          message: '色々やります。価値あるふとももをプロディースしたいです。',
+          job: 'Design/UIUX/WebFrontEnd/JSer',
+          message: '隠せないファッション、WEB上でもパッション。知ってる、知ってる、もっとユニークにしたいでしょ。そんなあなたと、ジャバスクリプト。',
           fb: null,
           tw: 'https://twitter.com/qiqimetal',
           insta: null,
@@ -138,16 +138,6 @@ export default {
           banner: require('~/assets/img/about/yuzu/banner.jpg'),
           icon: require('~/assets/img/about/yuzu/icon.jpg'),
         },
-        // {
-        //   name: 'Araka8/Shin1',
-        //   job: 'ファシリテーション/チームビルディング',
-        //   message: '良いチームが良いアウトプットを出します。良いチームを継続するには良いディスカスが必要不可欠です。僕たちはあなたのディスカスの質を引き上げます。',
-        //   fb: null,
-        //   tw: null,
-        //   insta: null,
-        //   banner: require('~/assets/img/about/yuzu/banner.jpg'),
-        //   icon: require('~/assets/img/about/yuzu/icon.jpg'),
-        // },
         {
           name: 'yutaka yoshida',
           job: 'Management/Producer',
