@@ -13,3 +13,6 @@ dist
 # firebase cache
 .firebase
 .firebase/**/*
+
+# ga
+google*
