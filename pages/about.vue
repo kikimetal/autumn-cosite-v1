@@ -54,13 +54,14 @@ export default {
     Heading,
     Footer,
   },
-  data () {
+  data() {
     return {
       memberArray: [
         {
           name: 'miyabi konishi',
           job: 'Director/Producer/Colorist/Photographer/UXdesigner',
-          message: '世界で活躍できるディレクターとして想いを強く引き出し制作物に反映できる人を目指しています。あらゆる人と物から自然に出て来る表情が好きです。飼い猫がかわいい。名前はにぼしです。',
+          message:
+            '世界で活躍できるディレクターとして想いを強く引き出し制作物に反映できる人を目指しています。あらゆる人と物から自然に出て来る表情が好きです。飼い猫がかわいい。名前はにぼしです。',
           fb: 'https://www.facebook.com/db.cola',
           tw: 'https://twitter.com/Msa_a0',
           insta: 'http://instagram.com/miyabikonishi',
@@ -70,7 +71,8 @@ export default {
         {
           name: 'YANDY',
           job: 'Cinematographer/Creative director',
-          message: '何事にもクリエイトする心を忘れない。褒められることを生きがいとしている人間です。',
+          message:
+            '何事にもクリエイトする心を忘れない。褒められることを生きがいとしている人間です。',
           fb: 'https://www.facebook.com/profile.php?id=100014044392071',
           tw: 'https://twitter.com/Autumn_yandy',
           insta: 'https://www.instagram.com/yandy_yamashita/?hl=ja',
@@ -80,7 +82,8 @@ export default {
         {
           name: 'NixoN',
           job: 'Director / λογος / illustrator / Religious study',
-          message: 'Εν αρχη ην ο λογος. 人の相を捉えるべく、その辺をうろうろしています。',
+          message:
+            'Εν αρχη ην ο λογος. 人の相を捉えるべく、その辺をうろうろしています。',
           fb: null,
           tw: 'https://twitter.com/2___o0oOo0o___9',
           insta: null,
@@ -90,7 +93,8 @@ export default {
         {
           name: '地村俊也',
           job: 'Cinematographer/Drone Operator/Colorist/DIT',
-          message: '美しい映像は、何かを伝える最高の言語だと思う。シネマティックな作風が持ち味。近年は空からもシネマティック。',
+          message:
+            '美しい映像は、何かを伝える最高の言語だと思う。シネマティックな作風が持ち味。近年は空からもシネマティック。',
           external: 'https://www.youtube.com/user/toshiya161',
           fb: null,
           tw: 'https://twitter.com/ari_azk',
@@ -101,7 +105,8 @@ export default {
         {
           name: 'あずきあらい',
           job: 'Illustrator',
-          message: 'ファンタジー世界に生きたい。チャイナ服の魅力に気が付き始めました。女の子の好きな部位はサガリです。',
+          message:
+            'ファンタジー世界に生きたい。チャイナ服の魅力に気が付き始めました。女の子の好きな部位はサガリです。',
           fb: null,
           tw: 'https://twitter.com/ari_azk',
           insta: null,
@@ -111,7 +116,8 @@ export default {
         {
           name: 'KIKIMETAL',
           job: 'Design/UIUX/WebFrontEnd/JSer',
-          message: '隠せないファッション、WEB上でもパッション。知ってる、知ってる、もっとユニークにしたいでしょ。そんなあなたと、ジャバスクリプト。',
+          message:
+            '隠せないファッション、WEB上でもパッション。知ってる、知ってる、もっとユニークにしたいでしょ。そんなあなたと、JavaScript.',
           fb: null,
           tw: 'https://twitter.com/qiqimetal',
           insta: null,
@@ -151,51 +157,55 @@ export default {
       ],
     }
   },
-  mounted () { this.$store.state.so() },
-  head () { return this.$store.state.getHead() },
+  mounted() {
+    this.$store.state.so()
+  },
+  head() {
+    return this.$store.state.getHead()
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 @import '~/assets/css/myset.scss';
 
-.top-image{
+.top-image {
   @include image;
   background-image: url(~assets/img/about-top.jpg);
 }
 
-.container{
+.container {
   padding-bottom: 10%;
   width: 100%;
-  @include md{
+  @include md {
     width: 80%;
     margin: 0 auto;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
     // grid-auto-rows: 49vw;
-  };
+  }
 
-  .card{
+  .card {
     padding: 5%;
     width: 100%;
-    @include md{
+    @include md {
       padding: 8% 5%;
-    };
+    }
 
-    .inner{
+    .inner {
       position: relative;
       width: 100%;
       height: 100%;
       background: $white;
-      box-shadow: 2px 0 42px 0 rgba(0,0,0,0.1);
+      box-shadow: 2px 0 42px 0 rgba(0, 0, 0, 0.1);
       overflow: hidden;
       --icon-size: 26vw;
-      @include md{
+      @include md {
         --icon-size: 11vw;
-      };
+      }
 
-      .banner{
+      .banner {
         position: relative;
         width: 100%;
         padding-top: 45%;
@@ -203,7 +213,7 @@ export default {
         background-position: center;
         background-repeat: no-repeat;
 
-        .icon{
+        .icon {
           position: absolute;
           left: calc(var(--icon-size) / 5);
           bottom: calc(-1 / 2 * var(--icon-size));
@@ -217,28 +227,28 @@ export default {
         }
       }
 
-      .text{
+      .text {
         padding: 7vw;
         padding-top: calc(var(--icon-size) / 1.6);
         font-size: 17px;
         line-height: 1.4;
-        @include md{
+        @include md {
           padding: 3vw;
           padding-top: calc(var(--icon-size) / 1.6);
-        };
-        .name{
+        }
+        .name {
           font-size: 1.5em;
           font-weight: 700;
           line-height: 1.8;
         }
-        .job{
+        .job {
           padding-bottom: 0.4em;
           font-size: 0.9em;
         }
-        .message{
+        .message {
           opacity: 0.6;
         }
-        .external{
+        .external {
           font-size: 0.86em;
           color: dark($bluegrey);
           font-family: helvetica, arial, sans-serif;
@@ -246,12 +256,12 @@ export default {
         }
       }
 
-      .share{
+      .share {
         padding-top: 11%;
         padding-bottom: 3%;
         @include flex-center;
         justify-content: flex-start;
-        a{
+        a {
           margin: 0 0.5em;
           display: inline-block;
           width: 2.9em;
@@ -260,13 +270,13 @@ export default {
           @include flex-center;
           fill: $white;
           background: $bluegrey;
-          &.fb{
-            background: #3B5998;
+          &.fb {
+            background: #3b5998;
           }
-          &.tw{
+          &.tw {
             background: rgb(0, 172, 237);
           }
-          &.insta{
+          &.insta {
             background: linear-gradient(130deg, #fbad50, #bc2a8d);
           }
         }
@@ -274,5 +284,4 @@ export default {
     }
   }
 }
-
 </style>
