@@ -7,25 +7,18 @@
       <div class="container">
         <h1 class="heading">Company</h1>
         <section class="message">
+          
           <h1>代表挨拶</h1>
           <p>
-            創業の動機は大きく二つの理由があります。
+            私はクリエイティブの力を信じています。
+            「豊かさ」の水準において、生活のための機能的な価値供給に関して日本はすでに一定に達してると感じています。
+            そういった状況の中で、機能はもちろんのこと、付加価値を念頭においた商品作りやコミュニケーションデザインこそがクリエイティブの大きな役割だと確信しています。 
+            特に、映像領域の活用はその重要性を疑う余地がありません。 
+            ブランドを重視し、ユーザー視点をぶらさず、適切なクリエティブを事業として社会に提供していくことが、豊かな社会を創ることに繋がると信じているのです。
           </p>
           <p>
-            一つは事業生があり、クリエティブの力を信じているからです。日本では豊かさの水準において、生活に必要な機能的な供給はすでに一定に達してると感じています。その中で機能はもちろんですが、付加価値を念頭においた商品作りやコミュニケーションデザインはクリエティブ領域の大きな役割だと確信しています。 特に映像領域の活用は日本において、その重要性は疑う余地はありません。
-            クリエティブ領域の技術を高め、ユーザー視点をぶらさず事業を進められれば会社の価値が大きく高まり、より豊かな社会を広めることに寄与できる考えます。
+            それが、わたしたちの「大切にしたいことを、ちゃんと大切にする」という価値観の表現方法であり、社会と関わっていく信念でもあります。
           </p>
-          <p>
-            二つめは、前職の経験を大きく活かせる状況にあると考えるからです。
-            若手クリエイターたちと接する機会が多く、また自身も芸大に所属していたためクリエティブの力が世の中の役に立てる確信を持っています。
-            経営陣の中でCOOを担当をしていた経験とクリエティブディレクターとしてのスキルを活かせる事業を検討した結果、 前職からお世話になっているお客様が顧客としている状況と、クリエイターと良好な関係を築いてる今、創業という選択肢は信ずるところを邁進する上で有力な選択肢となりました。
-          </p>
-
-          <!-- <h1>創業理念</h1>
-          <p>
-            市場におけるコンテンツの総量を増やすことはもちろんのこと、適切な流動を促し続けます。
-            この一連の行為を、個性あるクリエイター達と、私たちは「可視化」と「デザイン」の力を手段とし映像というアウトプットで様々な情報にアプローチする企業となります。私たちは、日本におけるクリエティブ産業の発展に貢献することを約束いたします。
-          </p> -->
 
         </section>
         <section class="info">
@@ -49,7 +42,9 @@
           <p>吉田 穰 (ヨシダ ユタカ)</p>
 
           <h2>事業内容</h2>
-          <p>インターネット付随サービス業　4012アプリケーション・サービス・コンテンツ・プロバイダ（※平成26年4月1日施行 日本標準産業分類より近似業種を抜粋)</p>
+          <p>
+            戦略PR/コンテンツ制作/コンテンツプロデュース
+          </p>
         </section>
       </div>
 
@@ -67,44 +62,48 @@ export default {
     Heading,
     Footer,
   },
-  mounted () { this.$store.state.so() },
-  head () { return this.$store.state.getHead() },
+  mounted() {
+    this.$store.state.so()
+  },
+  head() {
+    return this.$store.state.getHead()
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 @import '~/assets/css/myset.scss';
 
-.top-image{
+.top-image {
   @include image;
   background-image: url(~assets/img/company-top.jpg);
 }
 
-.container{
+.container {
   padding: 0 5%;
   padding-bottom: 12%;
-  @include md{
+  @include md {
     padding: 0 calc((100vw - 700px) / 2);
     padding-bottom: 8%;
-  };
-  @include lg{
+  }
+  @include lg {
     padding: 0 calc((100vw - 800px) / 2);
     padding-bottom: 8%;
-  };
+  }
 }
 
-.heading{
+.heading {
   position: relative;
   margin: 15% 0 4%;
   width: max-content;
   font-size: 44px;
   font-weight: 700;
   color: $bluegrey;
-  @include md{
+  @include md {
     font-size: 6vw;
     margin: 11% 0 6%;
-  };
-  &::after{
+  }
+  &::after {
     content: '';
     position: absolute;
     bottom: 0.08em;
@@ -118,30 +117,29 @@ export default {
   }
 }
 
-section{
+section {
   padding: 0 0 11%;
-  h1{
+  h1 {
     padding: 2.2em 0 0.9em;
     font-size: 1.4em;
     font-weight: 700;
     line-height: 1;
     color: $bluegrey;
   }
-  h2{
+  h2 {
     font-size: 1.1em;
     font-weight: 700;
     line-height: 1;
     padding: 2em 0 0.2em;
     opacity: 0.3;
   }
-  p{
+  p {
     padding: 0.6em 0;
     line-height: 1.8;
     color: $grey-7;
   }
 }
 
-.info{
-
+.info {
 }
 </style>

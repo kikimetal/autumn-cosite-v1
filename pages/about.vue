@@ -59,7 +59,7 @@ export default {
       memberArray: [
         {
           name: 'miyabi konishi',
-          job: 'Director/Producer/Colorist/Photographer/UXdesigner',
+          job: 'Direction / Color correction / Photo / UX',
           message:
             '世界で活躍できるディレクターとして想いを強く引き出し制作物に反映できる人を目指しています。あらゆる人と物から自然に出て来る表情が好きです。飼い猫がかわいい。名前はにぼしです。',
           fb: 'https://www.facebook.com/db.cola',
@@ -70,7 +70,7 @@ export default {
         },
         {
           name: 'YANDY',
-          job: 'Cinematographer/Creative director',
+          job: 'Film Operate / direction',
           message:
             '何事にもクリエイトする心を忘れない。褒められることを生きがいとしている人間です。',
           fb: 'https://www.facebook.com/profile.php?id=100014044392071',
@@ -81,7 +81,7 @@ export default {
         },
         {
           name: 'NixoN',
-          job: 'Director / λογος / illustrator / Religious study',
+          job: 'Illustration / λογος / Religious study',
           message:
             'Εν αρχη ην ο λογος. 人の相を捉えるべく、その辺をうろうろしています。',
           fb: null,
@@ -92,7 +92,7 @@ export default {
         },
         {
           name: '地村俊也',
-          job: 'Cinematographer/Drone Operator/Colorist/DIT',
+          job: 'Cinematographer / Drone Operator / Color correction / DIT',
           message:
             '美しい映像は、何かを伝える最高の言語だと思う。シネマティックな作風が持ち味。近年は空からもシネマティック。',
           external: 'https://www.youtube.com/user/toshiya161',
@@ -104,7 +104,7 @@ export default {
         },
         {
           name: 'あずきあらい',
-          job: 'Illustrator',
+          job: 'Illustration',
           message:
             'ファンタジー世界に生きたい。チャイナ服の魅力に気が付き始めました。女の子の好きな部位はサガリです。',
           fb: null,
@@ -115,7 +115,7 @@ export default {
         },
         {
           name: 'KIKIMETAL',
-          job: 'Design/UIUX/WebFrontEnd/JSer',
+          job: 'Design / UIUX / WebFrontEnd',
           message:
             '隠せないファッション、WEB上でもパッション。知ってる、知ってる、もっとユニークにしたいでしょ。そんなあなたと、JavaScript.',
           fb: null,
@@ -126,7 +126,7 @@ export default {
         },
         {
           name: '多々良さん(Tatara)',
-          job: 'Illustrator',
+          job: 'Illustration',
           message: '美少女が好きすぎて美少女になりたいです。',
           external: 'http://hasikiku.tumblr.com',
           fb: null,
@@ -146,8 +146,8 @@ export default {
         },
         {
           name: 'yutaka yoshida',
-          job: 'Management/Producer',
-          message: '一応代表です。偉くはないです',
+          job: 'Management / Produce',
+          message: '代表です。偉くはないです。',
           fb: 'https://www.facebook.com/y.yutaka.narukuma',
           tw: null,
           insta: null,
